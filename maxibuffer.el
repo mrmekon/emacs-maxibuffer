@@ -60,6 +60,10 @@
 ;;
 ;;; Code:
 
+(defvar maxibuffer-mode-map (make-sparse-keymap))
+(define-key maxibuffer-mode-map (kbd "C-c C-c") 'maxibuffer-save-buffer)
+(define-key maxibuffer-mode-map (kbd "C-c C-k") 'maxibuffer-kill-buffer)
+
 (define-minor-mode maxibuffer-mode
   "Minor mode for text input buffers spawned by maxibuffer.
 Provides a keymap with default keys for saving and killing the
@@ -67,10 +71,6 @@ maxibuffer.
 
 Add your own keybindings to `maxibuffer-mode-map`"
   nil " maxi")
-
-(defvar maxibuffer-mode-map (make-sparse-keymap))
-(define-key maxibuffer-mode-map (kbd "C-c C-c") 'maxibuffer-save-buffer)
-(define-key maxibuffer-mode-map (kbd "C-c C-k") 'maxibuffer-kill-buffer)
 
 (defvar maxibuffer-mark-begin nil
   "Saved maxibuffer mark.
