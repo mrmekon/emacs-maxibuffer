@@ -35,6 +35,19 @@ printed in the echo area.
 
 (maxibuffer-open "This is a test" 'message)
 
+## Installation
+
+
+1. Clone repo in your `~/.emacs.d/` folder:
+```
+$ cd ~/.emacs.d/ && git clone https://github.com/mrmekon/emacs-maxibuffer.git
+```
+2. Add it to your `~/.emacs` config:
+```
+(add-to-list 'load-path "~/.emacs.d/emacs-maxibuffer/")
+(require 'maxibuffer)
+```
+
 ## Contributing
 
 Make a pull request, or send an e-mail.
