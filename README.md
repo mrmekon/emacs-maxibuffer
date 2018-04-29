@@ -35,6 +35,16 @@ printed in the echo area.
 
 (maxibuffer-open "This is a test" 'message)
 
+## Screenshots
+
+### Insert into buffer:
+
+<center><img src="https://github.com/mrmekon/emacs-maxibuffer/blob/master/screenshots/maxibuffer1.gif?raw=true" width="600"></center>
+
+### Send to function:
+
+<center><img src="https://github.com/mrmekon/emacs-maxibuffer/blob/master/screenshots/maxibuffer2.gif?raw=true" width="600"></center>
+
 ## Installation
 
 
